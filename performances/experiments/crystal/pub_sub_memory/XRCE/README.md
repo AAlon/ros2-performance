@@ -1,7 +1,9 @@
 ### Micro XRCE DDS
 
 Preliminary results using MicroROS: https://micro-ros.github.io/
-* Note: at the moment this framework does not measure the resources consumed by the uROS agent, so this is not the whole picture. I anticipate the overall resources would still be significantly lower but we'll need to make some adjustments and rerun the experiment.
+
+* **Installation:** at the time of testing, only the `develop` branch supported ROS2 Crystal. You'd need to follow the instructions at [the wiki](https://github.com/micro-ROS/micro-ROS-doc/blob/develop/Installation/Linux_WSBuild%26Install.md), but in step 2 ("**Import Micro-ROS packages**") - instead of getting the .repos files from `master`, get them from `develop`.
+* **Note:** at the moment, this performance framework does not measure the resources consumed by the uROS agent, so this is not the whole picture. We'll need to make some adjustments and rerun the experiment if we want to compare apples to apples.
 #### only_subs, 4mb
 ```
 source env.sh
